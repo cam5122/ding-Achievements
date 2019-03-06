@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>智能绩效</title>
+    <script>
+      // 监控脚本
+      !(function (c, i, e, b) {
+        let hostname = window.location.host;
+        if (hostname.indexOf('dingteam.com') === -1 || hostname.indexOf('test.dingteam.com') > -1) { // 非线上环境，不用监控
+          return null;
+        }
+        var h = i.createElement("script");
+        var f = i.getElementsByTagName("script")[0];
+        h.type = "text/javascript";
+        h.crossorigin = true;
+        h.onload = function () {
+          c[b] || (c[b] = new c.wpkReporter({ bid: "dta_2_3769" }));
+          c[b].installAll()
+          console.log('监控脚本加载成功');
+        };
+        f.parentNode.insertBefore(h, f);
+        h.src = e
+      })(window, document, "https://g.alicdn.com/woodpeckerx/jssdk??wpkReporter.js", "__wpk")
+    </script>
+  </head>
+  <body>
+    <div id="app-box"></div>
+    <!-- built files will be auto injected -->
+    <!-- <script src="//g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script> -->
+    <!-- <script src="//g.alicdn.com/dingding/dingtalk-jsapi/2.0.57/dingtalk.open.js"></script> -->
+  </body>
+</html>

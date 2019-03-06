@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+/* 去除标签默认margin值 */
+
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+}
+
+
+/* 去除列表默认样式 */
+
+nav,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* HTML5标签兼容旧浏览器设置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+video,
+progress {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+
+/* 常用容器标签box-sizing属性 可根据需要删减 */
+
+body,
+div,
+p,
+td,
+section,
+header,
+footer,
+nav,
+ol,
+ul,
+li,
+dl,
+iframe,
+table,
+form,
+input,
+menu,
+article,
+aside,
+details {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    /* Webkit内核根据设备屏幕大小等比调整字体大小 用于移动端 */
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    touch-action: manipulation; // 取消300ms的延迟，Chrome、Safari
+}
+
+body {
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+             SimSun, sans-serif;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input,
+select {
+    vertical-align: middle;
+    *vertical-align: middle
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    outline: none;
+    border: none;
+    -webkit-appearance: button;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+
+
+/* end CSS reset */
+
